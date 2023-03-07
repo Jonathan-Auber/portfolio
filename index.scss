@@ -1,8 +1,10 @@
 // Variables des couleurs
 $primary: #1F2039;
 $secondary: #DA9D20;
-$font-primary: #FFF;
+$font-primary: #ffffff;
 $font-secondary: #A5B4FC;
+$font-family-primary: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+$font-family-secondary: "SF-Mono", Verdana, Geneva, Tahoma, sans-serif;
 
 // Appel des polices de caractère
 @font-face {
@@ -24,11 +26,14 @@ $font-secondary: #A5B4FC;
 
 body {
     background-color: $primary;
-    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font-family-primary;
     font-size: 16px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4rem;
 }
 
 /* Début du travail de la page */
+/* Partie HEADER */
 /* NAVBAR */
 
 .header__navbar {
@@ -38,7 +43,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 0px 2px 2px 1px #000000;
+    box-shadow: 0px 2px 2px 1px rgb(0, 0, 0, 0.5);
 
     &__link-container {
         width: 50vw;
@@ -68,7 +73,7 @@ body {
     }
 
     &__link-container a:last-child:hover {
-        background: rgb(218, 157, 32, .2);
+        background: rgb(218, 157, 32, 0.2);
     }
 }
 
@@ -87,12 +92,106 @@ body {
     -o-transition: 0.5s;
 }
 
-/* Menu burger */
+/* Partie MAIN */
+/* SECTION */
+.main {
+    // border: solid white 1px;
+    height: 90vh;
+    // margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.main__section {
+    // border: solid #A5B4FC 1px;
+    color: $font-primary;
+    width: 50vw;
+    height: 40vh;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: " ";
+        border-top: solid $secondary 10px;
+        border-left: solid $secondary 10px;
+        width: 10vw;
+        height: 8vh;
+    }
+
+    &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        content: " ";
+        border-right: solid $secondary 10px;
+        border-bottom: solid $secondary 10px;
+        width: 10vw;
+        height: 8vh;
+    }
+
+    & h1 {
+        font-size: 16px;
+    }
+
+    & h2,
+    h3 {
+        font-family: $font-family-secondary;
+        font-size: 40px;
+    }
+}
+
+/* Partie FOOTER */
+/* NAVBAR */
+
+.footer__navbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 8vw;
+    height: 30vh;
+
+    & a {
+        color: $secondary;
+
+        &:hover {
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+            transform: translateY(-20%);
+            -webkit-transform: translateY(-20%);
+            -moz-transform: translateY(-20%);
+            -ms-transform: translateY(-20%);
+            -o-transform: translateY(-20%);
+}
+    }
+
+    & span {
+        height: 15vh;
+        background-color: $secondary;
+        border: solid $secondary 1px;
+    }
+
+}
 
 /* Break Menu Burger */
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1349px) {
 
     .header__navbar__menu-burger {
         display: flex;
@@ -100,7 +199,7 @@ body {
         justify-content: center;
         align-items: flex-end;
         cursor: pointer;
-        z-index: 100;
+        z-index: 200;
         padding: 0.5rem;
 
         & span {
@@ -139,6 +238,7 @@ body {
         align-items: center;
         width: 100%;
         height: 100%;
+        z-index: 100;
         transform: translateX(-100%);
         -webkit-transform: translateX(-100%);
         -moz-transform: translateX(-100%);
@@ -156,7 +256,7 @@ body {
     }
 
 
-    /* Les classes qui seront Toggle */
+    /* Les classes qui seront Toggle pour le menu burger */
 
     .off {
         display: none;
