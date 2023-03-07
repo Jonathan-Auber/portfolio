@@ -14,29 +14,27 @@
     padding: 0;
 }
 
-/* html {
-    font-size: 1em;
-} */
-
 body {
     background-color: #1F2039;
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
 /* Navbar */
 
 .navbar {
-    width: 100%;
+    width: 100vw;
     height: 10vh;
-    padding: 15px;
+    padding: 1.5rem;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
     align-items: center;
-    font-size: 1rem;
+    box-shadow: 0px 2px 2px 1px #000000;
 }
 
 .navbar__link-container {
-    width: 60%;
+    width: 50vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +44,7 @@ body {
     text-decoration: none;
     color: #DA9D20;
     font-family: "SF-Mono", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .navbar__link-container a span {
@@ -63,16 +61,14 @@ body {
 }
 
 .btn {
-    width: 100px;
-    height: 40px;
-    padding: 5px;
+    padding: 0.6em 0.8em;
     border: solid #DA9D20 1px;
     background-color: #1F2039;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -80,6 +76,39 @@ body {
     -o-transition: 0.5s;
 }
 
-.navbar__link-container button:hover {
+.navbar__link-container a:last-child:hover {
     background: rgb(218, 157, 32, .2);
+}
+
+/* Menu burger */
+.menu-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.menu-burger span {
+    border: #DA9D20 solid 1px;
+}
+
+.menu-burger span:first-child {
+    width: 2rem;
+}
+
+.menu-burger span:nth-child(2) {
+    margin: 0.5rem 0;
+    width: 1.5rem;
+}
+
+.menu-burger span:last-child {
+    width: 1rem;
+}
+
+/* Break Menu Burger */
+
+@media screen and (max-width:1024px) {
+    .menu-burger {
+    }
 }
