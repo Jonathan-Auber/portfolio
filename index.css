@@ -148,75 +148,34 @@ body {
 }
 
 /* Les classes qui seront Toggle */
-@keyframes slideBottom {
-    from {
-        margin-bottom: -0.5rem;
-    }
-
-    20% {
-        margin-bottom: -1px;
-    }
-
-    to {
-        margin-bottom: -1px;
-        transform: rotate(405deg);
-        -webkit-transform: rotate(405deg);
-        -moz-transform: rotate(405deg);
-        -ms-transform: rotate(405deg);
-        -o-transform: rotate(405deg);
-    }
-}
-
-@keyframes slideTop {
-    from {
-        margin-top: -0.5rem;
-    }
-
-    20% {
-        margin-top: -0.6rem;
-    }
-
-    to {
-        width: 2em;
-        margin-top: -0.6rem;
-        transform: rotate(495deg);
-        -webkit-transform: rotate(495deg);
-        -moz-transform: rotate(495deg);
-        -ms-transform: rotate(495deg);
-        -o-transform: rotate(495deg);
-    }
-}
 
 .off {
     display: none;
-    /* transform: rotate(360deg);
+    transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg); */
+    -o-transform: rotate(360deg);
 }
 
 .close-top {
-    animation: slideBottom 1s ease-out 0;
-    /*margin-bottom: -1px;
+    margin-bottom: -1px;
     transform: rotate(405deg);
     -webkit-transform: rotate(405deg);
     -moz-transform: rotate(405deg);
     -ms-transform: rotate(405deg);
     -o-transform: rotate(405deg);
-    */
-    : ;
-    -webkit-animation: slideBottom 1s ease-out 0;
+
 }
 
 .close-bottom {
-    /* margin-top: -1px;
+    margin-top: -1px;
     width: 2rem;
     transform: rotate(495deg);
     -webkit-transform: rotate(495deg);
     -moz-transform: rotate(495deg);
     -ms-transform: rotate(495deg);
-    -o-transform: rotate(495deg); */
+    -o-transform: rotate(495deg);
     animation: slideTop 1s ease-out 0;
     -webkit-animation: slideTop 1s ease-out 0;
 }
