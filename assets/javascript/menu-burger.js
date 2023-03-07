@@ -1,7 +1,7 @@
 // Menu burger
 
-const NAVBARCONTAINER = document.querySelector(".navbar__link-container");
-const MENUBURGER = document.querySelector(".menu-burger");
+const NAVBARCONTAINER = document.querySelector("#link-container");
+const MENUBURGER = document.querySelector("#menu-burger");
 const BURGERTOP = document.querySelector(".burger-top");
 const BURGERMIDDLE = document.querySelector(".burger-middle");
 const BURGERBOTTOM = document.querySelector(".burger-bottom");
