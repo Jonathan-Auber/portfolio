@@ -13,11 +13,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 body {
   background-color: #1F2039;
-  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "SF-Mono", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   letter-spacing: 0.1rem;
   line-height: 1.4rem;
@@ -79,7 +80,6 @@ body {
 /* Break MENU BURGER */
 @media screen and (max-width: 1349px) {
   .header__navbar__menu-burger {
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,8 +112,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,11 +131,16 @@ body {
     -moz-transition: 1s ease-out;
     -ms-transition: 1s ease-out;
     -o-transition: 1s ease-out;
+    background-color: rgba(31, 32, 57, 0.5);
   }
   .header__navbar__link-container a {
     margin: 1.2rem;
+    font-size: 1.2rem;
   }
   /* Les classes qui seront Toggle pour le menu burger */
+  .fixed {
+    position: fixed;
+  }
   .off {
     display: none;
     transform: rotate(360deg);
@@ -171,6 +176,52 @@ body {
     -o-transform: translateX(0%);
   }
 }
+/* MAIN */
+.main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+.main__section {
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid white 1px;
+}
+.main__section div h1 {
+  color: #ffffff;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  white-space: nowrap;
+}
+.main__section div h1 span {
+  color: #DA9D20;
+  margin: 1rem;
+}
+.main__section div h1 span:first-child, .main__section div h1 span:last-child {
+  display: inline-block;
+  width: 10vw;
+  height: 0;
+  background-color: #DA9D20;
+  border: solid #DA9D20 1px;
+}
+
+.bloc-experiences {
+  border: solid gray 1px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 /* FOOTER */
 .footer {
   width: 100vw;

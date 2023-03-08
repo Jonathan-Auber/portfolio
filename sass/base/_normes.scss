@@ -3,10 +3,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 body {
-    background-color: $primary;
+    background-color: $primary-color;
     font-family: $font-family-primary;
     font-size: 16px;
     letter-spacing: 0.1rem;

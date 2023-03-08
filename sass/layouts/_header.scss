@@ -20,13 +20,13 @@
 
     &__link-container a {
         text-decoration: none;
-        color: $secondary;
-        font-family: "SF-Mono", Verdana, Geneva, Tahoma, sans-serif;
+        color: $secondary-color;
+        font-family: $font-family-primary;
         font-size: 0.9rem;
     }
 
     &__link-container a span {
-        color: $font-secondary;
+        color: $font-secondary-color;
         transition: .5s;
         -webkit-transition: .5s;
         -moz-transition: .5s;
@@ -35,7 +35,7 @@
     }
 
     &__link-container a:hover span {
-        color: $secondary;
+        color: $secondary-color;
     }
 
     &__link-container a:last-child:hover {
@@ -45,7 +45,7 @@
 
 .btn {
     padding: 0.6em 0.8em;
-    border: solid $secondary 1px;
+    border: solid $secondary-color 1px;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
@@ -63,7 +63,6 @@
 @media screen and (max-width:1349px) {
 
     .header__navbar__menu-burger {
-        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -73,8 +72,8 @@
         padding: 0.5rem;
 
         & span {
-            border: $secondary solid 1px;
-            background-color: $secondary;
+            border: $secondary-color solid 1px;
+            background-color: $secondary-color;
             transition: 0.4s ease-out;
             -webkit-transition: 0.4s ease-out;
             -moz-transition: 0.4s ease-out;
@@ -101,7 +100,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -119,14 +118,20 @@
         -moz-transition: 1s ease-out;
         -ms-transition: 1s ease-out;
         -o-transition: 1s ease-out;
+        background-color: rgb(31, 32, 57, 0.5);
 
         & a {
             margin: 1.2rem;
+            font-size: 1.2rem;
         }
     }
 
 
     /* Les classes qui seront Toggle pour le menu burger */
+
+    .fixed {
+        position: fixed;
+    }
 
     .off {
         display: none;

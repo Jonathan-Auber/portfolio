@@ -7,6 +7,7 @@ const BURGERMIDDLE = document.querySelector(".burger-middle");
 const BURGERBOTTOM = document.querySelector(".burger-bottom");
 
 function menuBurger() {
+    MENUBURGER.classList.toggle("fixed");
     BURGERTOP.classList.toggle("close-top");
     BURGERMIDDLE.classList.toggle("off");
     BURGERBOTTOM.classList.toggle("close-bottom");

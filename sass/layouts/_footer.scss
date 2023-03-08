@@ -19,7 +19,7 @@
         height: 30vh;
 
         & a {
-            color: $secondary;
+            color: $secondary-color;
 
             &:hover {
                 transition: 0.5s;
@@ -37,8 +37,8 @@
 
         & span {
             height: 15vh;
-            background-color: $secondary;
-            border: solid $secondary 1px;
+            background-color: $secondary-color;
+            border: solid $secondary-color 1px;
 
             &:first-child {
                 display: none;
