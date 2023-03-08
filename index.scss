@@ -9,12 +9,12 @@ $font-family-secondary: "SF-Mono", Verdana, Geneva, Tahoma, sans-serif;
 // Appel des polices de caractère
 @font-face {
     font-family: "SF-mono";
-    src: url(assets/fonts/SFMono-Regular.otf);
+    src: url(../assets/fonts/SFMono-Regular.otf);
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url(assets/fonts/Roboto-Regular.ttf);
+    src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
 // Mise en forme générale
