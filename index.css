@@ -130,6 +130,7 @@ body {
 /* Partie FOOTER */
 /* NAVBAR */
 .footer {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,12 +271,13 @@ body {
     position: static;
     flex-direction: row;
     justify-content: center;
+    width: 100vw;
   }
   .footer__navbar a {
     margin: auto 2rem;
   }
   .footer__navbar span {
-    width: 10vw;
+    width: 20vw;
     height: 0;
   }
   .footer__navbar span:first-child {
