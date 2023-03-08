@@ -86,9 +86,8 @@ body {
 
 .main__section {
   color: #ffffff;
-  width: 50vw;
-  height: 50vh;
-  padding: 1rem 2.5rem;
+  width: 70vw;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -123,8 +122,15 @@ body {
 .main__section h3 {
   font-family: "SF-Mono", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
-  font-size: 2.5vw;
-  white-space: nowrap;
+  font-size: clamp(1.5rem, 3.5vw, 45px);
+  white-space: break-spaces;
+  text-transform: uppercase;
+}
+.main__section h1,
+.main__section h2,
+.main__section h3,
+.main__section p {
+  margin: 1rem;
 }
 
 /* Partie FOOTER */
@@ -265,13 +271,28 @@ body {
     -o-transform: translateX(0%);
   }
 }
-/* Break FOOTER */
 @media screen and (max-width: 768px) {
+  /* Break MAIN */
+  .main__section {
+    width: 90vw;
+    text-align: justify;
+    font-size: 12px;
+  }
+  .main__section h1 {
+    font-size: 12px;
+  }
+  .main__section h2,
+  .main__section h3 {
+    text-align: left;
+    line-height: 2rem;
+  }
+  /* Break FOOTER */
   .footer__navbar {
     position: static;
     flex-direction: row;
     justify-content: center;
     width: 100vw;
+    height: 15vh;
   }
   .footer__navbar a {
     margin: auto 2rem;
