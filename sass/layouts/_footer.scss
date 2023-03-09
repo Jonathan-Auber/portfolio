@@ -47,27 +47,3 @@
 
     }
 }
-
-/* Break FOOTER */
-@media screen and (max-width: 768px) {
-.footer__navbar {
-    position: static;
-    flex-direction: row;
-    justify-content: center;
-    width: 100vw;
-    height: 15vh;
-
-    & a {
-        margin: auto 2rem;
-    }
-
-    & span {
-        width: 20vw;
-        height: 0;
-
-        &:first-child {
-            display: inline;
-        }
-    }
-}
-}
