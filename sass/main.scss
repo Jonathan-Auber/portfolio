@@ -1,0 +1,26 @@
+@import "./utils/variables.scss";
+@import "./base/typo.scss";
+@import "./base/normes.scss";
+
+@import "./layouts/header.scss";
+
+/*  PAGE INDEX.HTML */ 
+@import "./pages/index.scss";
+
+/*  PAGE ABOUT.HTML */ 
+@import "./pages/about.scss";
+
+/*  PAGE EXPERIENCE.HTML */ 
+@import "./pages/experience.scss";
+
+/*  PAGE PROJECT.HTML */ 
+@import "./pages/project.scss";
+
+// /*  PAGE CONTACT.HTML */ 
+@import "./pages/contact.scss";
+
+/* FOOTER */ 
+@import "./layouts/footer.scss";
+
+/* RESPONSIVE */
+@import "./pages/responsive.scss";
