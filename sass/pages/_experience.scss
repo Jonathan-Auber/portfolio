@@ -112,6 +112,10 @@
             display: none;
         }
 
+        & .gold {
+            color: $secondary-color;
+        }
+
 
         &>* {
             position: absolute;

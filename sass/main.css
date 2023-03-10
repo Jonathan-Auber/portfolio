@@ -297,6 +297,9 @@ body {
 .experience__section .bloc-experiences__right .off {
   display: none;
 }
+.experience__section .bloc-experiences__right .gold {
+  color: #DA9D20;
+}
 .experience__section .bloc-experiences__right > * {
   position: absolute;
   top: 0;
