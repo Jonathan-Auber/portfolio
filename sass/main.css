@@ -259,7 +259,7 @@ body {
 }
 .experience__section .bloc-experiences__left > p {
   width: 100%;
-  height: 60px;
+  height: 25%;
   padding: 20px;
   text-align: center;
   display: flex;
@@ -273,12 +273,15 @@ body {
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
 }
+.experience__section .bloc-experiences__left > p:hover {
+  background-color: rgb(42, 39, 39);
+}
 .experience__section .bloc-experiences__left .gold {
   color: #DA9D20;
 }
 .experience__section .bloc-experiences__left span {
   border: solid #DA9D20 1px;
-  height: 60px;
+  height: 25%;
   position: absolute;
   top: 0;
   left: 0;
@@ -299,6 +302,11 @@ body {
 }
 .experience__section .bloc-experiences__right .gold {
   color: #DA9D20;
+}
+.experience__section .bloc-experiences__right li {
+  list-style-position: inside;
+  padding-left: 1.2rem;
+  margin: 0.5rem;
 }
 .experience__section .bloc-experiences__right > * {
   position: absolute;

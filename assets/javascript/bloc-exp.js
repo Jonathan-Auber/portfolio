@@ -28,7 +28,7 @@ function stef() {
 }
 
 function canavese() {
-    MOVINGSPAN.style.top = "60px";
+    MOVINGSPAN.style.top = "25%";
     STEF.classList.remove("gold");
     CANAVESE.classList.add("gold");
     POSTE.classList.remove("gold");
@@ -41,7 +41,7 @@ function canavese() {
 }
 
 function poste() {
-    MOVINGSPAN.style.top = "120px";
+    MOVINGSPAN.style.top = "50%";
     STEF.classList.remove("gold");
     CANAVESE.classList.remove("gold");
     POSTE.classList.add("gold");
@@ -54,7 +54,7 @@ function poste() {
 }
 
 function armee() {
-    MOVINGSPAN.style.top = "180px";
+    MOVINGSPAN.style.top = "75%";
     STEF.classList.remove("gold");
     CANAVESE.classList.remove("gold");
     POSTE.classList.remove("gold");
