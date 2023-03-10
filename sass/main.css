@@ -13,7 +13,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 body {
@@ -243,23 +242,54 @@ body {
   border: solid #DA9D20 1px;
 }
 
-#bloc-experiences {
-  border: solid gray 1px;
+.experience__section .bloc-experiences {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: stretch;
   align-items: flex-start;
 }
-#bloc-experiences__left {
+.experience__section .bloc-experiences__left {
   width: 20%;
   height: 100%;
-  border: solid white 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  /* Classe à toogle permettant de changer la couleur de border lors de la selection d'une expérience */
 }
-#bloc-experiences__right {
+.experience__section .bloc-experiences__left > p {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-left: solid rgb(225, 216, 216) 2px;
+}
+.experience__section .bloc-experiences__left span {
+  border: solid #DA9D20 1px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+.experience__section .bloc-experiences__right {
   width: 80%;
   height: 100%;
-  border: solid white 1px;
+  position: relative;
+  padding: 20px;
+}
+.experience__section .bloc-experiences__right > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*  PAGE PROJECT.HTML */
