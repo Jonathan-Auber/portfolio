@@ -208,11 +208,17 @@ body {
   font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
 .experience__section {
-  width: 75vw;
+  width: 80vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid white 1px;
+}
+.experience__section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
 }
 .experience__section div h1 {
   color: #ffffff;
@@ -220,6 +226,7 @@ body {
   width: 100%;
   padding: 1rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
   white-space: nowrap;
@@ -236,11 +243,23 @@ body {
   border: solid #DA9D20 1px;
 }
 
-.bloc-experiences {
+#bloc-experiences {
   border: solid gray 1px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+#bloc-experiences__left {
+  width: 20%;
+  height: 100%;
+  border: solid white 1px;
+}
+#bloc-experiences__right {
+  width: 80%;
+  height: 100%;
+  border: solid white 1px;
 }
 
 /*  PAGE PROJECT.HTML */
