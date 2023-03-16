@@ -16,7 +16,8 @@ const ARMEEEXP = document.querySelector(".bloc-experiences__right--armee");
 // Les fonctions qui agisse en réponse au click
 
 function stef() {
-    MOVINGSPAN.style.top = "0px";
+    MOVINGSPAN.classList.add("move-to-stef");
+    MOVINGSPAN.classList.remove("move-to-canavese", "move-to-poste", "move-to-armee");
     STEF.classList.add("gold");
     CANAVESE.classList.remove("gold");
     POSTE.classList.remove("gold");
@@ -28,7 +29,8 @@ function stef() {
 }
 
 function canavese() {
-    MOVINGSPAN.style.top = "25%";
+    MOVINGSPAN.classList.remove("move-to-stef", "move-to-poste", "move-to-armee");
+    MOVINGSPAN.classList.add("move-to-canavese");
     STEF.classList.remove("gold");
     CANAVESE.classList.add("gold");
     POSTE.classList.remove("gold");
@@ -37,11 +39,11 @@ function canavese() {
     CANAVESEEXP.classList.remove("off");
     POSTEEXP.classList.add("off");
     ARMEEEXP.classList.add("off");
-
 }
 
 function poste() {
-    MOVINGSPAN.style.top = "50%";
+    MOVINGSPAN.classList.remove("move-to-stef", "move-to-canavese", "move-to-armee");
+    MOVINGSPAN.classList.add("move-to-poste");
     STEF.classList.remove("gold");
     CANAVESE.classList.remove("gold");
     POSTE.classList.add("gold");
@@ -54,7 +56,8 @@ function poste() {
 }
 
 function armee() {
-    MOVINGSPAN.style.top = "75%";
+    MOVINGSPAN.classList.remove("move-to-stef", "move-to-canavese", "move-to-poste");
+    MOVINGSPAN.classList.add("move-to-armee");
     STEF.classList.remove("gold");
     CANAVESE.classList.remove("gold");
     POSTE.classList.remove("gold");

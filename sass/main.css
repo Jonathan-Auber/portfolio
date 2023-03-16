@@ -243,7 +243,8 @@ body {
 }
 
 .experience__section .bloc-experiences {
-  width: 80%;
+  width: 100%;
+  height: 35vh;
   display: flex;
   flex-direction: row;
   justify-content: stretch;
@@ -291,6 +292,18 @@ body {
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
 }
+.experience__section .bloc-experiences .move-to-stef {
+  top: 0% !important;
+}
+.experience__section .bloc-experiences .move-to-canavese {
+  top: 25% !important;
+}
+.experience__section .bloc-experiences .move-to-poste {
+  top: 50% !important;
+}
+.experience__section .bloc-experiences .move-to-armee {
+  top: 75% !important;
+}
 .experience__section .bloc-experiences__right {
   width: 80%;
   height: 100%;
@@ -303,25 +316,24 @@ body {
 .experience__section .bloc-experiences__right .gold {
   color: #DA9D20;
 }
+.experience__section .bloc-experiences__right ul {
+  margin-top: 2rem;
+}
 .experience__section .bloc-experiences__right li {
   list-style-position: inside;
   padding-left: 1.2rem;
   margin: 0.5rem;
 }
 .experience__section .bloc-experiences__right > * {
+  overflow: scroll;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   padding: 2rem;
   border: solid #DA9D20 1px;
@@ -498,6 +510,55 @@ body {
   .about__section figure {
     width: 200px;
     margin: 5rem;
+  }
+  /* BREAK EXPERIENCE */
+  .experience__section .bloc-experiences {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .experience__section .bloc-experiences__left {
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    height: 20%;
+  }
+  .experience__section .bloc-experiences__left p {
+    border-left: none;
+    border-bottom: solid rgb(225, 216, 216) 2px;
+    height: 100%;
+  }
+  .experience__section .bloc-experiences__left span {
+    width: 25%;
+    height: 0%;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+  }
+  .experience__section .bloc-experiences .move-to-stef {
+    left: 0% !important;
+    top: 100% !important;
+  }
+  .experience__section .bloc-experiences .move-to-canavese {
+    left: 25% !important;
+    top: 100% !important;
+  }
+  .experience__section .bloc-experiences .move-to-poste {
+    left: 50% !important;
+    top: 100% !important;
+  }
+  .experience__section .bloc-experiences .move-to-armee {
+    left: 75% !important;
+    top: 100% !important;
+  }
+  .experience__section .bloc-experiences__right {
+    width: 100%;
+    height: 70%;
   }
 }
 @media screen and (max-width: 768px) {
