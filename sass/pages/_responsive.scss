@@ -147,7 +147,9 @@
     /* BREAK EXPERIENCE */
     /* LEFT */
     .experience {
-        height: 100vh;
+        height: 90vh;
+        // display: flex;
+        // flex-direction: column;
         & .experience__section {
             >div {
                 &>h1 {
@@ -243,6 +245,7 @@
         line-height: 1.6rem;
         // letter-spacing: 0.2rem;
     }
+
 
     /* Break INDEX */
     .index__section {

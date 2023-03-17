@@ -6,7 +6,8 @@
     justify-content: center;
     align-items: center;
     color: $font-primary-color;
-    font-family: $font-family-secondary;
+    font-family: $font-family-primary;
+    // border: solid white 1px;
 
     &__section {
         width: 80vw;
@@ -66,6 +67,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         position: relative;
+        font-family: $font-family-secondary;
 
         &>p {
             width: 100%;
@@ -123,6 +125,7 @@
         height: 100%;
         position: relative;
         padding: 20px;
+        // border: solid white 1px;
 
         & .off {
             display: none;
@@ -162,6 +165,5 @@
             -ms-border-radius: 5px;
             -o-border-radius: 5px;
         }
-
     }
 }
