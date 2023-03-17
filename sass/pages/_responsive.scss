@@ -123,6 +123,7 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: justify;
+                max-width: 90%;
 
                 & h1 {
                     padding: 0;
@@ -144,6 +145,23 @@
 
 
     /* BREAK EXPERIENCE */
+    /* LEFT */
+    .experience {
+        height: 100vh;
+        & .experience__section {
+            >div {
+                &>h1 {
+
+                    & span:first-child,
+                    & span:last-child {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+
     .experience__section .bloc-experiences {
         width: 100%;
         height: 50vh;
@@ -151,17 +169,19 @@
         flex-direction: column;
         justify-content: space-between;
 
+
         &__left {
             flex-direction: row;
             justify-content: stretch;
             align-items: stretch;
             width: 100%;
-            height: 20%;
+            height: 15%;
 
             & p {
+                width: 25%;
+                height: 100%;
                 border-left: none;
                 border-bottom: solid rgb(225, 216, 216) 2px;
-                height: 100%;
             }
 
             & span {
@@ -174,40 +194,61 @@
                 -o-transform: translateY(-100%);
             }
         }
+
         & .move-to-stef {
             left: 0% !important;
             top: 100% !important;
         }
+
         & .move-to-canavese {
             left: 25% !important;
             top: 100% !important;
 
         }
+
         & .move-to-poste {
             left: 50% !important;
             top: 100% !important;
 
         }
+
         & .move-to-armee {
             left: 75% !important;
             top: 100% !important;
 
         }
 
+        /* RIGHT */
+
         &__right {
             width: 100%;
-            height: 70%;
+            height: 80%;
+
+            &>div {
+                border: none;
+                overflow: visible;
+            }
         }
+
+
     }
 }
 
 @media screen and (max-width: 768px) {
+    /* GENERAL */
+
+    p,
+    ul {
+        font-size: 12px;
+        line-height: 1.6rem;
+        // letter-spacing: 0.2rem;
+    }
 
     /* Break INDEX */
     .index__section {
         width: 90vw;
         text-align: justify;
-        font-size: 12px;
+        // font-size: 12px;
 
         & h1 {
             font-size: 12px;
@@ -217,12 +258,15 @@
         h3 {
             text-align: left;
             line-height: 2rem;
+            white-space: break-spaces;
         }
     }
 
     /* Break FOOTER */
     .footer__navbar {
-        position: static;
+        position: sticky;
+        bottom: 0;
+
         flex-direction: row;
         justify-content: center;
         width: 100vw;

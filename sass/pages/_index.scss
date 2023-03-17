@@ -48,7 +48,8 @@
             font-family: $font-family-secondary;
             font-weight: 900;
             font-size: clamp(1.5rem, 3.5vw, 45px);
-            white-space: break-spaces;
+            line-height: 1.5rem;
+            white-space: nowrap;
             text-transform: uppercase;
         }
     

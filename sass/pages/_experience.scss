@@ -7,7 +7,6 @@
     align-items: center;
     color: $font-primary-color;
     font-family: $font-family-secondary;
-    // border: solid white 1px;
 
     &__section {
         width: 80vw;
@@ -144,7 +143,7 @@
         }
 
 
-        &>* {
+        &>div {
             overflow: scroll;
             position: absolute;
             top: 0;

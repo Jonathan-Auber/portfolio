@@ -13,6 +13,15 @@ const CANAVESEEXP = document.querySelector(".bloc-experiences__right--canavese")
 const POSTEEXP = document.querySelector(".bloc-experiences__right--poste");
 const ARMEEEXP = document.querySelector(".bloc-experiences__right--armee");
 
+
+window.onload = remiseZero ();
+
+// La fonction qui reinitialise la page au chargement
+function remiseZero () {
+    MOVINGSPAN.classList.add("move-to-stef");
+    MOVINGSPAN.classList.remove("move-to-canavese", "move-to-poste", "move-to-armee");
+}
+
 // Les fonctions qui agisse en réponse au click
 
 function stef() {
@@ -73,3 +82,5 @@ STEF.addEventListener("click", stef);
 CANAVESE.addEventListener("click", canavese);
 POSTE.addEventListener("click", poste);
 ARMEE.addEventListener("click", armee);
+
+
