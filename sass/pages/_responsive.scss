@@ -70,6 +70,8 @@
 
     .fixed {
         position: fixed;
+        top: 30px;
+        right: 25px;
     }
 
     .off {
@@ -245,6 +247,27 @@
                 & span:last-child {
                     display: none;
                 }
+            }
+        }
+    }
+
+    /* BREAK CONTACT */
+    .contact {
+        &__section {
+            align-items: center;
+
+            & h1 {
+                & span {
+                    margin: 0 1rem 0 0;
+                }
+
+                & span:last-child {
+                    display: none;
+                }
+            }
+
+            & p {
+                text-align: justify;
             }
         }
     }
