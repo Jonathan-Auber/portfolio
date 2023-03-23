@@ -198,6 +198,7 @@ body {
 /*  PAGE EXPERIENCE.HTML */
 /* MAIN */
 .experience {
+  padding-top: 50px;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -346,6 +347,123 @@ body {
 }
 
 /*  PAGE PROJECT.HTML */
+.project {
+  color: #ffffff;
+  font-family: "SF-Mono", Verdana, Geneva, Tahoma, sans-serif;
+}
+.project__section {
+  margin: 50px auto;
+  width: 60%;
+}
+.project__section h1 {
+  color: #ffffff;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  white-space: nowrap;
+  font-size: 1.5em;
+}
+.project__section h1 span {
+  color: #DA9D20;
+  margin: 1rem;
+}
+.project__section h1 span:first-child, .project__section h1 span:last-child {
+  display: inline-block;
+  width: 10vw;
+  height: 0;
+  background-color: #DA9D20;
+  border: solid #DA9D20 1px;
+}
+
+.carousel-item {
+  cursor: pointer;
+}
+
+.project-windows {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(31, 32, 57, 0.5);
+  z-index: 2000;
+}
+.project-windows__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+  padding: 5%;
+}
+.project-windows__header h2 {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  color: #DA9D20;
+  margin-bottom: 0;
+}
+.project-windows__header a,
+.project-windows__header i {
+  color: #DA9D20;
+  font-size: 1.5rem;
+}
+.project-windows__header i {
+  padding: 0.5rem;
+}
+.project-windows__header div {
+  display: flex;
+  align-items: center;
+}
+.project-windows__header div > i {
+  font-size: 2rem;
+}
+.project-windows__body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90vw;
+  height: 80%;
+}
+.project-windows__body figure {
+  width: 40%;
+}
+.project-windows__body figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.project-windows__body > div {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: justify;
+}
+.project-windows__body > div i {
+  color: #DA9D20;
+  font-size: 2.5rem;
+}
+
+.closed {
+  cursor: pointer;
+}
+
+.project-appears {
+  top: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+
 /* FOOTER */
 /* FOOTER */
 .footer {
@@ -523,7 +641,7 @@ body {
   }
   .experience__section .bloc-experiences {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -575,6 +693,13 @@ body {
     border: none;
     overflow: visible;
   }
+  /* BREAK PROJECT */
+  .project__section {
+    width: 70%;
+  }
+  .project__section h1 span:first-child, .project__section h1 span:last-child {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   /* GENERAL */
@@ -596,6 +721,24 @@ body {
     text-align: left;
     line-height: 2rem;
     white-space: break-spaces;
+  }
+  /* BREAK PROJECT */
+  .project-windows__header > span {
+    display: none;
+  }
+  .project-windows__body {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .project-windows__body figure {
+    width: 50%;
+  }
+  .project-windows__body div {
+    width: 90%;
+  }
+  .project-windows__body div > div {
+    text-align: center;
   }
   /* Break FOOTER */
   .footer__navbar {
