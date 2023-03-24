@@ -34,6 +34,9 @@ body {
   align-items: center;
   box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
+.header__navbar--home {
+  margin-top: 20px;
+}
 .header__navbar p > a {
   font-size: 2em;
   color: #ffffff;

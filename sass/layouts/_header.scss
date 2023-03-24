@@ -11,11 +11,16 @@
     align-items: center;
     box-shadow: 0px 2px 2px 1px rgb(0, 0, 0, 0.5);
 
+    &--home {
+     margin-top: 20px;
+    }
+
     & p {
-        & > a {
+        &>a {
             font-size: 2em;
             color: $font-primary-color;
             text-decoration: none;
+
             &:hover {
                 color: $secondary-color;
                 transition: 0.5s;
@@ -23,7 +28,7 @@
                 -moz-transition: 0.5s;
                 -ms-transition: 0.5s;
                 -o-transition: 0.5s;
-}
+            }
         }
     }
 
