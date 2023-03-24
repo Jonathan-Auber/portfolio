@@ -304,7 +304,33 @@
         }
     }
 
+    /* BREAK ABOUT */
+    .about {
+        &__section {
+            & h1 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    /* BREAK EXPERIENCE */
+    .experience {
+        &__section {
+            & h1 {
+                font-size: 18px;
+            }
+        }
+    }
+
     /* BREAK PROJECT */
+    .project {
+        &__section {
+            & h1 {
+                font-size: 18px;
+            }
+        }
+    }
+
     .project-windows {
         &__header {
             >span {
@@ -331,7 +357,17 @@
         }
     }
 
-    /* Break FOOTER */
+    /* BREAK CONTACT */
+
+    .contact {
+        &__section {
+            & h1 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    /* BREAK FOOTER */
     .footer__navbar {
         position: sticky;
         bottom: 0;
