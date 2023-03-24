@@ -497,6 +497,7 @@ body {
   -o-transition: 0.5s ease-in-out;
 }
 
+/*  PAGE CONTACT.HTML */
 .contact {
   display: flex;
   flex-direction: column;
@@ -563,6 +564,7 @@ body {
   background: rgba(218, 157, 32, 0.2);
 }
 
+/* PAGE API.HTML */
 /* FOOTER */
 /* FOOTER */
 .footer {
