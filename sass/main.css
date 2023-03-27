@@ -843,8 +843,18 @@ body {
     font-size: 18px;
   }
   /* BREAK EXPERIENCE */
+  .experience {
+    width: 100vw;
+  }
+  .experience__section {
+    width: 100%;
+  }
   .experience__section h1 {
     font-size: 18px;
+  }
+  .experience__section .bloc-experiences__right {
+    width: 95%;
+    text-align: justify;
   }
   /* BREAK PROJECT */
   .project__section h1 {

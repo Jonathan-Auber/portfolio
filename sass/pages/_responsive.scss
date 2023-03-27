@@ -315,10 +315,19 @@
 
     /* BREAK EXPERIENCE */
     .experience {
+        width: 100vw;
         &__section {
+            width: 100%;
             & h1 {
                 font-size: 18px;
             }
+        }
+    }
+
+    .experience__section .bloc-experiences {
+        &__right {
+            width: 95%;
+            text-align: justify;
         }
     }
 
