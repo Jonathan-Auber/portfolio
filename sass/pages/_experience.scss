@@ -107,15 +107,19 @@
             -o-transition: 0.5s ease-in-out;
         }
     }
+
     & .move-to-stef {
         top: 0% !important;
     }
+
     & .move-to-canavese {
         top: 25% !important;
     }
+
     & .move-to-poste {
         top: 50% !important;
     }
+
     & .move-to-armee {
         top: 75% !important;
     }
@@ -164,7 +168,8 @@
             -moz-border-radius: 5px;
             -ms-border-radius: 5px;
             -o-border-radius: 5px;
-            & > div {
+
+            &>div {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;

@@ -1,25 +1,33 @@
 const WRAPPER = document.querySelector('.api__section');
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '476e6a88bemshe2743700f2b9539p1da050jsn5841396743bb',
-		'X-RapidAPI-Host': 'omgvamp-hearthstone-v1.p.rapidapi.com'
-	}
-};
 
-fetch('https://omgvamp-hearthstone-v1.p.rapidapi.com/info', options)
+// fetch('https://omgvamp-hearthstone-v1.p.rapidapi.com/info', options)
+// 	.then(response => response.json())
+// 	.then(data => {
+// 		console.log(data.classes);
+// 		data.classes.forEach(element => {
+// 			console.log(element.classes)
+// 			const CONTAINER = document.createElement("div");
+// 			const NAME = document.createElement("p");
+// 			WRAPPER.appendChild(CONTAINER);
+// 			CONTAINER.appendChild(NAME);
+// 			NAME.innerHTML = `Classes : ${element}`;
+// 		});
+// 	}
+// 	)
+// 	.catch(err => console.error(err));
+
+fetch('https://api.nasa.gov/planetary/apod?api_key=IOGagThStxF7X0yyTYHRUePpLWjb9Bj3VyD7PaY7&count=10')
 	.then(response => response.json())
 	.then(data => {
-		console.log(data.classes);
-		data.classes.forEach(element => {
-			console.log(element.classes)
+		console.log(data)
+		data.forEach(element => {
 			const CONTAINER = document.createElement("div");
-			const NAME = document.createElement("p");
 			WRAPPER.appendChild(CONTAINER);
-			CONTAINER.appendChild(NAME);
-			NAME.innerHTML = `Classes : ${element}`;
-		});
-	}
+			CONTAINER.innerHTML = `<figure>
+			<figcaption>${element.title}</figcaption>
+			<img src="${element.hdurl}"><img></figure>`}
+			)
+		}
 	)
 	.catch(err => console.error(err));

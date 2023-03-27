@@ -807,6 +807,9 @@ body {
   .contact__section {
     align-items: center;
   }
+  .contact__section h1 {
+    justify-content: center;
+  }
   .contact__section h1 span {
     margin: 0 1rem 0 0;
   }
