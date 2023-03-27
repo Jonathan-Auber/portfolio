@@ -1,22 +1,5 @@
 const WRAPPER = document.querySelector('.api__section');
 
-
-// fetch('https://omgvamp-hearthstone-v1.p.rapidapi.com/info', options)
-// 	.then(response => response.json())
-// 	.then(data => {
-// 		console.log(data.classes);
-// 		data.classes.forEach(element => {
-// 			console.log(element.classes)
-// 			const CONTAINER = document.createElement("div");
-// 			const NAME = document.createElement("p");
-// 			WRAPPER.appendChild(CONTAINER);
-// 			CONTAINER.appendChild(NAME);
-// 			NAME.innerHTML = `Classes : ${element}`;
-// 		});
-// 	}
-// 	)
-// 	.catch(err => console.error(err));
-
 fetch('https://api.nasa.gov/planetary/apod?api_key=IOGagThStxF7X0yyTYHRUePpLWjb9Bj3VyD7PaY7&count=10')
 	.then(response => response.json())
 	.then(data => {

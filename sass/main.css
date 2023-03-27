@@ -573,10 +573,12 @@ body {
 .api__section div {
   width: 80%;
   padding: 2rem;
+  margin-top: 50px;
 }
 .api__section div figure figcaption {
   text-align: center;
   color: #ffffff;
+  padding: 2rem;
 }
 .api__section div figure img {
   -o-object-fit: cover;

@@ -6,10 +6,12 @@
         & div {
             width: 80%;
             padding: 2rem;
+            margin-top: 50px;           
             & figure {
                 & figcaption {
                     text-align: center;
                     color: $font-primary-color;
+                    padding: 2rem;
                 }
                 & img {
                     object-fit: cover;
