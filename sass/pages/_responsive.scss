@@ -258,6 +258,7 @@
 
             & h1 {
                 justify-content: center;
+
                 & span {
                     margin: 0 1rem 0 0;
                 }
@@ -317,8 +318,10 @@
     /* BREAK EXPERIENCE */
     .experience {
         width: 100vw;
+
         &__section {
             width: 100%;
+
             & h1 {
                 font-size: 18px;
             }
@@ -371,6 +374,8 @@
 
     .contact {
         &__section {
+            width: 85vw;
+
             & h1 {
                 font-size: 18px;
             }

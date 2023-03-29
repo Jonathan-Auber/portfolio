@@ -903,6 +903,9 @@ body {
     text-align: center;
   }
   /* BREAK CONTACT */
+  .contact__section {
+    width: 85vw;
+  }
   .contact__section h1 {
     font-size: 18px;
   }
