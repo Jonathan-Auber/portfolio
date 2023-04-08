@@ -757,6 +757,9 @@ body {
   .experience {
     height: auto;
   }
+  .experience .experience__section > div > h1 {
+    margin-top: 3.5rem;
+  }
   .experience .experience__section > div > h1 span:first-child, .experience .experience__section > div > h1 span:last-child {
     display: none;
   }
