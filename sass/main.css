@@ -339,7 +339,7 @@ body {
 .experience__section .bloc-experiences__right li {
   list-style-position: inside;
   padding-left: 1.2rem;
-  margin: 0.5rem;
+  margin: 1.2rem;
 }
 .experience__section .bloc-experiences__right > div {
   overflow: scroll;
@@ -454,7 +454,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 90vw;
   height: 80%;
 }
 .project-windows__body figure {
