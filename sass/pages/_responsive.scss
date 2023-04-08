@@ -225,7 +225,7 @@
 
         &__right {
             width: 100%;
-            height: 80%;
+            // height: 80%;
 
             &>div {
                 border: none;
@@ -318,6 +318,8 @@
     /* BREAK EXPERIENCE */
     .experience {
         width: 100vw;
+        height: auto;
+        
 
         &__section {
             width: 100%;
@@ -386,7 +388,6 @@
     .footer__navbar {
         position: sticky;
         bottom: 0;
-
         flex-direction: row;
         justify-content: center;
         width: 100vw;

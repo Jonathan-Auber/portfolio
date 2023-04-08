@@ -215,13 +215,13 @@ body {
 /*  PAGE EXPERIENCE.HTML */
 /* MAIN */
 .experience {
-  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ffffff;
   font-family: "SF-Mono", Verdana, Geneva, Tahoma, sans-serif;
+  border: solid green 1px;
 }
 .experience__section {
   width: 80vw;
@@ -324,9 +324,8 @@ body {
 }
 .experience__section .bloc-experiences__right {
   width: 80%;
-  height: 100%;
-  position: relative;
   padding: 20px;
+  border: solid white 1px;
 }
 .experience__section .bloc-experiences__right .off {
   display: none;
@@ -344,11 +343,7 @@ body {
 }
 .experience__section .bloc-experiences__right > div {
   overflow: scroll;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -812,7 +807,6 @@ body {
   }
   .experience__section .bloc-experiences__right {
     width: 100%;
-    height: 80%;
   }
   .experience__section .bloc-experiences__right > div {
     border: none;
@@ -870,6 +864,7 @@ body {
   /* BREAK EXPERIENCE */
   .experience {
     width: 100vw;
+    height: auto;
   }
   .experience__section {
     width: 100%;
