@@ -149,7 +149,7 @@
     /* BREAK EXPERIENCE */
     /* LEFT */
     .experience {
-        height: 90vh;
+        height: auto;
 
         & .experience__section {
             >div {
@@ -167,7 +167,8 @@
 
     .experience__section .bloc-experiences {
         width: 100%;
-        height: 70vh;
+        // height: 70vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -319,7 +320,7 @@
     .experience {
         width: 100vw;
         height: auto;
-        
+
 
         &__section {
             width: 100%;
@@ -332,7 +333,7 @@
 
     .experience__section .bloc-experiences {
         &__right {
-            width: 95%;
+            // width: 95%;
             text-align: justify;
         }
     }

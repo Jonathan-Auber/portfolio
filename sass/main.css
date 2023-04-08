@@ -215,13 +215,13 @@ body {
 /*  PAGE EXPERIENCE.HTML */
 /* MAIN */
 .experience {
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ffffff;
   font-family: "SF-Mono", Verdana, Geneva, Tahoma, sans-serif;
-  border: solid green 1px;
 }
 .experience__section {
   width: 80vw;
@@ -261,7 +261,7 @@ body {
 
 .experience__section .bloc-experiences {
   width: 100%;
-  height: 35vh;
+  height: 50vh;
   display: flex;
   flex-direction: row;
   justify-content: stretch;
@@ -324,8 +324,8 @@ body {
 }
 .experience__section .bloc-experiences__right {
   width: 80%;
+  height: 100%;
   padding: 20px;
-  border: solid white 1px;
 }
 .experience__section .bloc-experiences__right .off {
   display: none;
@@ -344,6 +344,7 @@ body {
 .experience__section .bloc-experiences__right > div {
   overflow: scroll;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -754,14 +755,14 @@ body {
   /* BREAK EXPERIENCE */
   /* LEFT */
   .experience {
-    height: 90vh;
+    height: auto;
   }
   .experience .experience__section > div > h1 span:first-child, .experience .experience__section > div > h1 span:last-child {
     display: none;
   }
   .experience__section .bloc-experiences {
     width: 100%;
-    height: 70vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -873,7 +874,6 @@ body {
     font-size: 18px;
   }
   .experience__section .bloc-experiences__right {
-    width: 95%;
     text-align: justify;
   }
   /* BREAK PROJECT */
