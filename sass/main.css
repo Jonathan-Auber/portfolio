@@ -925,4 +925,23 @@ body {
   .footer__navbar span:first-child {
     display: inline;
   }
+}
+@media screen and (max-width: 500px) {
+  .index {
+    height: auto;
+    margin-top: 10vh;
+  }
+}
+.experience__section .bloc-experiences__left > p {
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.experience__section .bloc-experiences__right {
+  padding: 0;
+}
+.experience__section .bloc-experiences__right li {
+  padding-left: 0;
+  margin: 0.8rem;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
