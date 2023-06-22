@@ -393,20 +393,19 @@
     height: auto;
     margin-top: 10vh;
   }
-}
-
-.experience__section .bloc-experiences__left {
-  & > p {
-    white-space: nowrap;
-    padding: 10px;
+  .experience__section .bloc-experiences__left {
+    & > p {
+      white-space: nowrap;
+      padding: 10px;
+    }
   }
-}
 
-.experience__section .bloc-experiences__right {
-  padding: 0;
-  li {
-    padding-left: 0;
-    margin: 0.8rem;
-    text-align: center;
+  .experience__section .bloc-experiences__right {
+    padding: 0;
+    li {
+      padding-left: 0;
+      margin: 0.8rem;
+      text-align: start;
+    }
   }
 }
