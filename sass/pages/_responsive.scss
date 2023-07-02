@@ -1,3 +1,17 @@
+@media screen and (max-width: 1450px) {
+  main {
+    width: auto;
+  }
+
+  .api {
+    & section {
+      & div {
+        width: 80%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1349px) {
   /* BREAK MENU BURGER */
   .header__navbar__menu-burger {
@@ -235,6 +249,13 @@
           display: none;
         }
       }
+    }
+  }
+
+  .project-windows {
+    & figure {
+      width: 40%;
+      height: auto;
     }
   }
 

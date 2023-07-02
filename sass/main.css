@@ -23,6 +23,11 @@ body {
   line-height: 1.5rem;
 }
 
+main {
+  width: 70vw;
+  margin: auto;
+}
+
 /*HEADER */
 /* NAVBAR */
 .header__navbar {
@@ -462,7 +467,7 @@ body {
   height: 80%;
 }
 .project-windows__body figure {
-  width: 40%;
+  width: 25%;
 }
 .project-windows__body figure img {
   -o-object-fit: cover;
@@ -571,7 +576,7 @@ body {
   align-items: center;
 }
 .api__section div {
-  width: 80%;
+  width: 50%;
   padding: 2rem;
   margin-top: 50px;
 }
@@ -631,6 +636,14 @@ body {
 }
 
 /* RESPONSIVE */
+@media screen and (max-width: 1450px) {
+  main {
+    width: auto;
+  }
+  .api section div {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1349px) {
   /* BREAK MENU BURGER */
   .header__navbar__menu-burger {
@@ -826,6 +839,10 @@ body {
   }
   .project__section h1 span:first-child, .project__section h1 span:last-child {
     display: none;
+  }
+  .project-windows figure {
+    width: 40%;
+    height: auto;
   }
   /* BREAK CONTACT */
   .contact__section {
